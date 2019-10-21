@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #85a2a6;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  padding: 15px;
+  border-bottom: 0.25px solid #a9a9a9;
+  background-color: #f6f6f6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.demo {
+  padding: 15px;
+  height: 100vh;
+  background-image: url("/assets/map.png");
+  background-size: cover;
+}
+
+input[type="text"] {
+  border-radius: 15px;
+  border-style: none;
+  border: 0.25px solid #a9a9a9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  width: 200px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+.fas fa-directions {
+  color: #85a2a6;
+}
+
+.demo-bar {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  left: 180px;
+  top: 18px;
+  color: #85a2a6;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.credit {
+  text-decoration: none;
+  color: #85a2a6;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 8px;
+  display: none;
+}
+
+.store-buttons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.google {
+  width: 140px;
+  height: auto;
+  padding: 0px 15px;
+}
+
+.apple {
+  width: 140px;
+  height: auto;
+  padding: 0px 15px;
+}
+
+.mockup {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mockup {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .mockup img {
+    height: 500px;
+    width: auto;
+  }
+  main {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .demo {
+    height: 525px;
+    width: 900px;
+    border: 3px solid #85a2a6;
+    border-radius: 10px;
+  }
+  .mockup img.google {
+    width: 90px;
+    height: auto;
+    padding: 0px 8px;
+  }
+  .mockup img.apple {
+    width: 90px;
+    height: auto;
+    padding: 0px 8px;
+  }
+  footer {
+    display: none;
+  }
+  .credit {
+    display: block;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links li {
+    margin-left: 15px;
+  }
+}
